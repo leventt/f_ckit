@@ -5,7 +5,7 @@ def f_ckit(code, inputIntList=[]):
     instructions = list(
         filter(lambda x: x in '[]<>.,+-', code)
     )
-    instructionCursor = -1
+    instructionCursor = 0
     data = [0]
     dataCursor = 0
     inputCopy = inputIntList[:]
