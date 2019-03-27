@@ -15,7 +15,7 @@ def f_ckit(code, inputIntList=[]):
         instruction = instructions[instructionCursor]
         if instruction == ',':
             data[dataCursor] = inputCopy.pop(
-            ) if input else float('nan')
+            ) if inputCopy else float('nan')
             instructionCursor += 1
         elif instruction == '.':
             output.append(data[dataCursor])
